@@ -18,23 +18,13 @@ export function drawOverGrid(index)
 	Settings.obj.grid.domGrids.childNodes[index].style.backgroundPosition = `${margin[1]}px ${margin[0]}px`;
 }
 
-export function show_values()
+export function showConsole_mapTilesValues()
 {
-	console.log('graphFile-Width:' + Settings.graphFile.width);
-	console.log('graphFile-Height:' + Settings.graphFile.height);
-	console.log('graphFile-TileWidth:' + Settings.graphFile.tileWidth);
-	console.log('graphFile-TileHeight:' + Settings.graphFile.tileHeight);
+	console.log('graphFile-Width:' + Settings.mapTiles.width);
+	console.log('graphFile-Height:' + Settings.mapTiles.height);
+	console.log('graphFile-TileWidth:' + Settings.mapTiles.tileWidth);
+	console.log('graphFile-TileHeight:' + Settings.mapTiles.tileHeight);
 
 	console.log('graphFile-numberTilesX:' + Settings.graphFileNumberTiles.x);
 	console.log('graphFile-numberTilesY:' + Settings.graphFileNumberTiles.y);
-
-	console.log('ScaleXY:', Settings.scaleImgOnScreen, Settings.scaleImgOnScreen);
-
-	console.log('arrayTiles:' + Settings.getArrayTiles(), Settings.getArrayTiles().length);
-
-	/* const mlText = 10;
-	ctx.font = "16px arial";
-	ctx.fillStyle = Settings.colores.blanco;
-	ctx.fillText(`Grid-rows: ${Settings.grid.y}`, mlText, Math.floor(Settings.screen[1] / 1.3));
-	ctx.fillText(`Grid-columns: ${Settings.grid.x}`, mlText, Math.floor(Settings.screen[1] / 1.24)); */
 }

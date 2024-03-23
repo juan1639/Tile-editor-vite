@@ -38,4 +38,10 @@ export const eventListeners = document.addEventListener('click', ({target}) =>
         const index = parseInt(target.id.slice(8));
         drawOverGrid(index);
     }
+
+    if (target.id === 'obtenerJson')
+    {
+        console.log('copy to clipboard to paste to your project in a json file');
+        Settings.domShowValues.textArea.innerText = Settings.obj.grid.jsonGridTiles;
+    }
 });

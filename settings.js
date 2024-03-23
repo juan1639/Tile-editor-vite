@@ -33,4 +33,12 @@ export class Settings
     }
 
     static selectTile = 0;
+
+    static domShowValues =
+    {
+        gridRows: document.getElementById('showRows'),
+        gridColumns: document.getElementById('showColumns'),
+        textArea: document.getElementById('textAreaJson'),
+        buttonGetTxt: document.getElementById('obtenerJson')
+    }
 }

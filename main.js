@@ -2,7 +2,7 @@
 //  	Tile-Editor by Juan Eguia
 // 
 // ----------------------------------------------------------------------------
-import {show_values} from './functions.js';
+import {showConsole_mapTilesValues} from './functions.js';
 import {Settings} from './settings.js';
 import {eventListeners} from './eventlisteners.js';
 import { Grid } from './grid.js';
@@ -21,6 +21,8 @@ function create_newMapTiles()
 		Settings.mapTiles.imgUrlTxt,
 		Settings.graphFileNumberTiles.x, Settings.graphFileNumberTiles.y
 	);
+
+	showConsole_mapTilesValues();
 }
 
 export function create_newGrid(bool)

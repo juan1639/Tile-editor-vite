@@ -5,10 +5,11 @@ export class Grid
     constructor(x, y)
     {
         this.domGrids = document.getElementById('gridZone');
-        this.jsonGridTiles = new Array(x * y).fill('f');
+        this.jsonGridTiles = new Array(x * y).fill('1');
         this.matrizGridTiles = new Array(y);
         this.create_matrizGridTiles(x, y);
         this.update(x, y);
+        this.showGridValues(x, y);
     }
 
     update(x, y)
@@ -46,5 +47,16 @@ export class Grid
             }
         }
         console.log(this.matrizGridTiles);
+    }
+
+    showGridValues(x, y)
+    {
+        Settings.domShowValues.gridRows.innerText = `Grid-Rows: ${y}`;
+        Settings.domShowValues.gridColumns.innerText = `Grid-Columns: ${x}`;
+        /* const mlText = 10;
+        ctx.font = "16px arial";
+        ctx.fillStyle = Settings.colores.blanco;
+        ctx.fillText(`Grid-rows: ${Settings.grid.y}`, mlText, Math.floor(Settings.screen[1] / 1.3));
+        ctx.fillText(`Grid-columns: ${Settings.grid.x}`, mlText, Math.floor(Settings.screen[1] / 1.24)); */
     }
 }
