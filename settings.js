@@ -9,7 +9,7 @@ export class Settings
         height: 320,
         tileWidth: 32,
         tileHeight: 32,
-        imgUrlTxt: './public/tiles-suelo-metal.png'
+        imgUrlTxt: './tiles-suelo-metal.png'
     }
 
     static graphFileNumberTiles =

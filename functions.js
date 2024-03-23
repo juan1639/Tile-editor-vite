@@ -10,11 +10,11 @@ export function calculaBackgroundPosition(index)
 
 export function drawOverGrid(index)
 {
-	Settings.obj.grid.jsonGridTiles[index] = Settings.selectTile;
+	Settings.obj.grid.jsonGridTiles[index] = Settings.selectTile + 1;
 	console.log(Settings.obj.grid.jsonGridTiles);
 
 	Settings.obj.grid.domGrids.childNodes[index].style.backgroundImage = `url(${Settings.mapTiles.imgUrlTxt})`;
-	const margin = calculaBackgroundPosition(Settings.obj.grid.jsonGridTiles[index]);
+	const margin = calculaBackgroundPosition(Settings.selectTile);
 	Settings.obj.grid.domGrids.childNodes[index].style.backgroundPosition = `${margin[1]}px ${margin[0]}px`;
 }
 

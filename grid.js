@@ -53,10 +53,5 @@ export class Grid
     {
         Settings.domShowValues.gridRows.innerText = `Grid-Rows: ${y}`;
         Settings.domShowValues.gridColumns.innerText = `Grid-Columns: ${x}`;
-        /* const mlText = 10;
-        ctx.font = "16px arial";
-        ctx.fillStyle = Settings.colores.blanco;
-        ctx.fillText(`Grid-rows: ${Settings.grid.y}`, mlText, Math.floor(Settings.screen[1] / 1.3));
-        ctx.fillText(`Grid-columns: ${Settings.grid.x}`, mlText, Math.floor(Settings.screen[1] / 1.24)); */
     }
 }
